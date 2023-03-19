@@ -18,7 +18,7 @@ def compare_runs(entity='sulphatet',
                  run_id=None):
     "Compare the current run to the baseline run."
 
-    # Allow you to override the args with env variables
+   
     entity = os.getenv('WANDB_ENTITY') or entity
     project = os.getenv('WANDB_PROJECT') or project
     tag = os.getenv('BASELINE_TAG') or tag
